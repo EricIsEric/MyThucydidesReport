@@ -1,5 +1,5 @@
 Meta:
-@feature DownloadCSVfile
+@feature Login
 Scenario: Start to loin the Openl10n site
 Given Delete all cookies before start testing
 When the user has opened the Openl10n webpage

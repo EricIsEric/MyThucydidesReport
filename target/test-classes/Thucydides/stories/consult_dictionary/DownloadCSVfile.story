@@ -1,5 +1,5 @@
 Meta:
-@feature LoginAAA
+@feature DownloadCSVfile
 Scenario: Download the CSV file for one specific product
 Given Delete all cookies before start testing
 When the user has opened the Openl10n webpage
