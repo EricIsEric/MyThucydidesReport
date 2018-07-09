@@ -1,0 +1,38 @@
+{"xref": {
+  "whenMade": 1531098723735,
+  "createdBy": "JBehave",
+  "metaFilter": "-ignore",
+  "meta": [
+    "feature=DownloadCSVfile",
+    "feature=Login"
+  ],
+  "stories": [
+    {
+      "description": "",
+      "narrative": "",
+      "name": "PageLogin.story",
+      "path": "Thucydides/stories/consult_dictionary/PageLogin.story",
+      "html": "Thucydides.stories.consult_dictionary.PageLogin.html",
+      "meta": "feature=DownloadCSVfile\u000a",
+      "scenarios": "Scenario:Start to loin the Openl10n site\u000aGiven Delete all cookies before start testing\u000aWhen the user has opened the Openl10n webpage\u000aThen the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page\u000aThen click the Login submit button of Openl10n Page\u000aThen the Openl10n main page should be displayed\u000a\u000a\u000a",
+      "passed": true,
+      "pending": false,
+      "started": 1531098489775,
+      "duration": 55263
+    },
+    {
+      "description": "",
+      "narrative": "",
+      "name": "DownloadCSVfile.story",
+      "path": "Thucydides/stories/consult_dictionary/DownloadCSVfile.story",
+      "html": "Thucydides.stories.consult_dictionary.DownloadCSVfile.html",
+      "meta": "feature=Login\u000a",
+      "scenarios": "Scenario:Download the CSV file for one specific product\u000aGiven Delete all cookies before start testing\u000aWhen the user has opened the Openl10n webpage\u000aThen the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page\u000aThen click the Login submit button of Openl10n Page\u000aThen the Openl10n main page should be displayed\u000aThen select product as 'PPM'\u000aThen select version as '9.50'\u000aThen select language as 'Finnish'\u000aThen click 'Download' button\u000a\u000a\u000a",
+      "passed": true,
+      "pending": false,
+      "started": 1531098545286,
+      "duration": 174050
+    }
+  ],
+  "stepMatches": []
+}}

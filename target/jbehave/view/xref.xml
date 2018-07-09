@@ -1,0 +1,60 @@
+<xref>
+  <whenMade>1531098723735</whenMade>
+  <createdBy>JBehave</createdBy>
+  <metaFilter>-ignore</metaFilter>
+  <meta>
+    <string>feature=DownloadCSVfile</string>
+    <string>feature=Login</string>
+  </meta>
+  <stories>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>PageLogin.story</name>
+      <path>Thucydides/stories/consult_dictionary/PageLogin.story</path>
+      <html>Thucydides.stories.consult_dictionary.PageLogin.html</html>
+      <meta>feature=DownloadCSVfile
+</meta>
+      <scenarios>Scenario:Start to loin the Openl10n site
+Given Delete all cookies before start testing
+When the user has opened the Openl10n webpage
+Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page
+Then click the Login submit button of Openl10n Page
+Then the Openl10n main page should be displayed
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1531098489775</started>
+      <duration>55263</duration>
+    </story>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>DownloadCSVfile.story</name>
+      <path>Thucydides/stories/consult_dictionary/DownloadCSVfile.story</path>
+      <html>Thucydides.stories.consult_dictionary.DownloadCSVfile.html</html>
+      <meta>feature=Login
+</meta>
+      <scenarios>Scenario:Download the CSV file for one specific product
+Given Delete all cookies before start testing
+When the user has opened the Openl10n webpage
+Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page
+Then click the Login submit button of Openl10n Page
+Then the Openl10n main page should be displayed
+Then select product as &apos;PPM&apos;
+Then select version as &apos;9.50&apos;
+Then select language as &apos;Finnish&apos;
+Then click &apos;Download&apos; button
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1531098545286</started>
+      <duration>174050</duration>
+    </story>
+  </stories>
+  <stepMatches/>
+</xref>
