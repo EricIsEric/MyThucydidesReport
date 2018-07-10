@@ -1,6 +1,6 @@
 <story path="Thucydides/stories/consult_dictionary/DownloadCSVfile.story" title="">
 <meta>
-<property keyword="@" name="feature" value="Login"/>
+<property keyword="@" name="feature" value="DownloadCSVfile"/>
 </meta>
 <scenario keyword="Scenario:" title="Download the CSV file for one specific product">
 <step outcome="successful">Given Delete all cookies before start testing</step>

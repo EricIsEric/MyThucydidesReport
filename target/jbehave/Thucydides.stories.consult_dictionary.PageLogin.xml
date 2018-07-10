@@ -1,6 +1,6 @@
 <story path="Thucydides/stories/consult_dictionary/PageLogin.story" title="">
 <meta>
-<property keyword="@" name="feature" value="DownloadCSVfile"/>
+<property keyword="@" name="feature" value="Login"/>
 </meta>
 <scenario keyword="Scenario:" title="Start to loin the Openl10n site">
 <step outcome="successful">Given Delete all cookies before start testing</step>
