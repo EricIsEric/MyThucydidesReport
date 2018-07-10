@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1531204721733</whenMade>
+  <whenMade>1531206370581</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta>
@@ -26,8 +26,8 @@ Then the Openl10n main page should be displayed
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1531204485496</started>
-      <duration>54167</duration>
+      <started>1531206136461</started>
+      <duration>54468</duration>
     </story>
     <story>
       <description></description>
@@ -52,8 +52,8 @@ Then click &apos;Download&apos; button
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1531204539876</started>
-      <duration>176714</duration>
+      <started>1531206191293</started>
+      <duration>174593</duration>
     </story>
   </stories>
   <stepMatches/>
