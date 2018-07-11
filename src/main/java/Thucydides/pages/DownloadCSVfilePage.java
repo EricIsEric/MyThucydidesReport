@@ -1,11 +1,27 @@
 package Thucydides.pages;
 
-import org.openqa.selenium.By;
-
+import net.thucydides.core.annotations.findby.By;
 import net.thucydides.core.pages.PageObject;
 import net.thucydides.core.pages.WebElementFacade;
 
 public class DownloadCSVfilePage extends PageObject {
+	
+	public void login(String username, String password){
+	    	
+	        WebElementFacade usernameInput = find(By.id("username"));
+	        WebElementFacade passwordInput = find(By.id("password"));
+	        usernameInput.type(username);
+	        passwordInput.type(password);
+	
+	    }
+	
+		public void clickSubmit() {
+			find(By.id("submit")).click();
+		}
+	
+		public void assertLoginSuccessfully() {
+			getDriver().getCurrentUrl().contains("translation");
+		}	
 	
 	public void getProduct() throws Exception {
 		WebElementFacade TrigProduct=find(By.xpath("/html/body/div/my-app/mf-apps/div/div[2]/mf-translation/div/div/div[1]/div[1]/ux-select/div/input"));
@@ -36,4 +52,7 @@ public class DownloadCSVfilePage extends PageObject {
 		ClickDownloadBtn.click();
 		Thread.sleep(30000);
 	}
+	
+	
+				
 }

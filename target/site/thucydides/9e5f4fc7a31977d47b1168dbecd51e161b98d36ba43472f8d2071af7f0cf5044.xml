@@ -1,49 +1,50 @@
-<acceptance-test-run title="Download the CSV file for one specific product" name="Download the CSV file for one specific product" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="174587" timestamp="2018-07-10T15:03:11.298+08:00">
+<acceptance-test-run title="Download the CSV file for one specific product" name="Download the CSV file for one specific product" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="159001" timestamp="2018-07-11T14:51:10.350+08:00">
   <user-story id="DownloadCSVfile" name="Download CS vfile" path="Thucydides/stories/consult_dictionary/DownloadCSVfile.story"/>
   <tags>
     <tag name="DownloadCSVfile" type="feature"/>
     <tag name="Consult dictionary/Download CS vfile" type="story"/>
     <tag name="Download CS vfile" type="story"/>
   </tags>
-  <test-step result="SUCCESS" duration="11">
+  <test-step result="SUCCESS" duration="125">
     <description>Given Delete all cookies before start testing</description>
   </test-step>
-  <test-step result="SUCCESS" duration="27096">
+  <test-step result="SUCCESS" duration="18278">
     <screenshots>
-      <screenshot image="bb6b4b0c00ade30a569807ba39cee9f2_NONE.png"/>
+      <screenshot image="7dca1ccf0dee57699af097ac6385ca60_NONE.png"/>
     </screenshots>
     <description>When the user has opened the Openl10n webpage</description>
   </test-step>
   <test-group name="Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page" result="SUCCESS">
     <screenshots>
-      <screenshot image="91365da41d64c116f62332e23c8c72bb_NONE.png"/>
+      <screenshot image="927515f56fc27d51ce10adef4ae8a277_NONE.png"/>
+      <screenshot image="4d229685a3aa8a2733d3d06628b72b4a_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="1448">
+    <test-step result="SUCCESS" duration="1677">
       <screenshots>
-        <screenshot image="b677f09ffe7fddbe7ddd49fb386f3b08_NONE.png"/>
-        <screenshot image="6c924a06d7bd7f9ab0047e585486e094_NONE.png"/>
+        <screenshot image="196a9b5c47f9cc71caa2914bc3fcf702_NONE.png"/>
+        <screenshot image="20423bfe8ae2ba1a4424536348a9559b_NONE.png"/>
       </screenshots>
       <description>Enter un pwd: &lt;span class=&apos;step-parameter&apos;&gt;15202184317@qq.com, 123qwe!@#QWE&lt;/span&gt;</description>
     </test-step>
   </test-group>
   <test-group name="Then click the Login submit button of Openl10n Page" result="SUCCESS">
     <screenshots>
-      <screenshot image="97ebf3873dcd8361b64e4fd6feb2d3c2_NONE.png"/>
-      <screenshot image="c993b030d17b01a427615409be36c951_NONE.png"/>
+      <screenshot image="20423bfe8ae2ba1a4424536348a9559b_NONE.png"/>
+      <screenshot image="5e8ed919dc97c584a2f50f7466c3800b_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="871">
+    <test-step result="SUCCESS" duration="1027">
       <screenshots>
-        <screenshot image="799ecf1a499a4c624cebacda4e74cdfc_NONE.png"/>
-        <screenshot image="05bf302eb2b609fec3dd8e4e76901ad3_NONE.png"/>
+        <screenshot image="20423bfe8ae2ba1a4424536348a9559b_NONE.png"/>
+        <screenshot image="6dd6eaec41b59a6693999baa73b32b83_NONE.png"/>
       </screenshots>
       <description>Click submit btn</description>
     </test-step>
   </test-group>
   <test-group name="Then the Openl10n main page should be displayed" result="SUCCESS">
     <screenshots>
-      <screenshot image="1134641d7d101d4f7c663d7345b966c2_NONE.png"/>
+      <screenshot image="4682662eae91a24bb09f9461b99dffc5_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="661">
+    <test-step result="SUCCESS" duration="690">
       <screenshots>
         <screenshot image="4682662eae91a24bb09f9461b99dffc5_NONE.png"/>
       </screenshots>
@@ -52,11 +53,10 @@
   </test-group>
   <test-group name="Then select product as &apos;PPM&apos;" result="SUCCESS">
     <screenshots>
-      <screenshot image="4682662eae91a24bb09f9461b99dffc5_NONE.png"/>
+      <screenshot image="7e7860499b0c330772ee44ac7fa30d6c_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="24049">
+    <test-step result="SUCCESS" duration="24119">
       <screenshots>
-        <screenshot image="4682662eae91a24bb09f9461b99dffc5_NONE.png"/>
         <screenshot image="93b3e00d495bf7fd21a134f3948510b0_NONE.png"/>
       </screenshots>
       <description>Click product</description>
@@ -64,13 +64,12 @@
   </test-group>
   <test-group name="Then select version as &apos;9.50&apos;" result="SUCCESS">
     <screenshots>
-      <screenshot image="7e7860499b0c330772ee44ac7fa30d6c_NONE.png"/>
       <screenshot image="dbe028c3c714e92efe16a0c76bbe929c_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="23067">
+    <test-step result="SUCCESS" duration="23062">
       <screenshots>
         <screenshot image="93b3e00d495bf7fd21a134f3948510b0_NONE.png"/>
-        <screenshot image="2027250a3ebcc1c30ae1988f94ef7613_NONE.png"/>
+        <screenshot image="4e58e62d3cf7f3f7e1b8d47f1ced5883_NONE.png"/>
       </screenshots>
       <description>Click version</description>
     </test-step>
@@ -80,7 +79,7 @@
       <screenshot image="66a37b6568b5685a8f04c862df93d2df_NONE.png"/>
       <screenshot image="19694ce7c6090545103eb57c3bd5386b_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="23027">
+    <test-step result="SUCCESS" duration="23119">
       <screenshots>
         <screenshot image="caafe1e1942241990b66050ce7da4c2a_NONE.png"/>
       </screenshots>
@@ -91,7 +90,7 @@
     <screenshots>
       <screenshot image="19694ce7c6090545103eb57c3bd5386b_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="50875">
+    <test-step result="SUCCESS" duration="51039">
       <screenshots>
         <screenshot image="caafe1e1942241990b66050ce7da4c2a_NONE.png"/>
         <screenshot image="9416e1ffa68edeb16c3b4ed092b84ac5_NONE.png"/>
