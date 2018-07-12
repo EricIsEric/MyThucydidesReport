@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="0" name="Thucydides.jbehave.Openl10nAcceptanceTestSuite" time="164.924" errors="0" skipped="0">
+<testsuite tests="14" failures="0" name="Thucydides.jbehave.Openl10nAcceptanceTestSuite" time="167.956" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -28,7 +28,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\UX_Design\Desktop\backup\GitHub_PreCodeWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3250653443874063193.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\UX_Design\Desktop\backup\GitHub_PreCodeWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2777889402499306595.tmp"/>
     <property name="sun.jnu.encoding" value="GBK"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/UX_Design/Desktop/1/BaiduYunDown/eclipse-java-oxygen-R-win32-x86_64/eclipse/jre/bin/server;C:/Users/UX_Design/Desktop/1/BaiduYunDown/eclipse-java-oxygen-R-win32-x86_64/eclipse/jre/bin;C:/Users/UX_Design/Desktop/1/BaiduYunDown/eclipse-java-oxygen-R-win32-x86_64/eclipse/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_144;C:\WINDOWS\System32\OpenSSH\;C:\apache-maven-3.5.3\bin;C:\_PersonalInstall\Git\cmd;C:\_PersonalInstall\Git;C:\_PersonalInstall\Git\bin;%M2_HOME%\bin;C:\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jre1.8.0_171\bin;C:\mvn_repo;C:\Users\UX_Design\Desktop\Grid;C:\Users\UX_Design\Desktop\1\PythonInstall\Python36\Scripts\;C:\Users\UX_Design\Desktop\1\PythonInstall\Python36\;C:\Users\UX_Design\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\UX_Design\AppData\Local\GitHubDesktop\bin;C:\Users\UX_Design\Desktop\1\BaiduYunDown\eclipse-java-oxygen-R-win32-x86_64\eclipse;;."/>
     <property name="story.names" value="consult_dictionary/*;"/>
@@ -69,16 +69,17 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="java.lang.Object" name="BeforeStories" time="0.016"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Given Delete all cookies before start testing" time="0.12"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="When the user has opened the Openl10n webpage" time="18.277"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page" time="2.133"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then click the Login submit button of Openl10n Page" time="11.997"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then the Openl10n main page should be displayed" time="1.02"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then select product as \&apos;PPM\&apos;" time="24.441"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then select version as \&apos;9.50\&apos;" time="23.401"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then select language as \&apos;Finnish\&apos;" time="23.476"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then click \&apos;Download\&apos; button" time="51.371"/>
-  <testcase classname="Scenario: Download the CSV file for one specific product" name="Scenario: Download the CSV file for one specific product" time="51.555"/>
-  <testcase classname="DownloadCSVfile.story" name="DownloadCSVfile.story" time="52.018"/>
-  <testcase classname="java.lang.Object" name="AfterStories" time="3.585"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Given Delete all cookies before start testing" time="0.15"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="When the user has opened the Openl10n webpage" time="23.215"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page" time="2.123"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then click the Login submit button of Openl10n Page" time="11.383"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then the Openl10n main page should be displayed" time="1.011"/>
+  <testcase classname="Scenario: Start to login the Openl10n site" name="Scenario: Start to login the Openl10n site" time="1.194"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then select product as \&apos;PPM\&apos;" time="24.344"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then select version as \&apos;9.50\&apos;" time="23.254"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then select language as \&apos;Finnish\&apos;" time="23.365"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then click \&apos;Download\&apos; button" time="51.214"/>
+  <testcase classname="Scenario: Download the CSV file for one specific product\u002C @feature Download" name="Scenario: Download the CSV file for one specific product\u002C @feature Download" time="51.219"/>
+  <testcase classname="DownloadCSVfile.story" name="DownloadCSVfile.story" time="51.405"/>
+  <testcase classname="java.lang.Object" name="AfterStories" time="3.208"/>
 </testsuite>

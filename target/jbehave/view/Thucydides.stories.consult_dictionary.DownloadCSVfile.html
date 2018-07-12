@@ -11,15 +11,19 @@
 <div class="path">Thucydides/stories/consult_dictionary/DownloadCSVfile.story</div>
 <div class="meta">
 <div class="keyword">Meta:</div>
-<div class="property">@feature DownloadCSVfile</div>
+<div class="property">@feature Login</div>
 </div>
 <div class="scenario">
-<h2>Scenario: Download the CSV file for one specific product</h2>
+<h2>Scenario: Start to login the Openl10n site</h2>
 <div class="step successful">Given Delete all cookies before start testing</div>
 <div class="step successful">When the user has opened the Openl10n webpage</div>
 <div class="step successful">Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page</div>
 <div class="step successful">Then click the Login submit button of Openl10n Page</div>
 <div class="step successful">Then the Openl10n main page should be displayed</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Download the CSV file for one specific product
+@feature Download</h2>
 <div class="step successful">Then select product as 'PPM'</div>
 <div class="step successful">Then select version as '9.50'</div>
 <div class="step successful">Then select language as 'Finnish'</div>
