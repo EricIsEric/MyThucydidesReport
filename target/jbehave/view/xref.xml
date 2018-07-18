@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1531891768239</whenMade>
+  <whenMade>1531895974681</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta>
@@ -30,8 +30,8 @@ Then click &apos;Download&apos; button
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1531891623487</started>
-      <duration>132963</duration>
+      <started>1531895852188</started>
+      <duration>118093</duration>
     </story>
   </stories>
   <stepMatches/>

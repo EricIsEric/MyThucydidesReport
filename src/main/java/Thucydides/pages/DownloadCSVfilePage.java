@@ -54,13 +54,14 @@ public class DownloadCSVfilePage extends PageObject {
 		 Product.sendKeys(UserProduct);
 		 Thread.sleep(150);
 		 Product.sendKeys(Keys.ENTER);
+		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Product, " + "【" + UserProduct + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 		 }
+		 System.out.println();
 		 Thread.sleep(1000);
 		 
 
 		// 【PART 3】: 根据参数动态选择Version信息.
-		WebElement Version = find(By.xpath(
-				"/html/body/div/my-app/mf-apps/div/div[2]/mf-translation/div/div/div[1]/div[2]/ux-select/div/input"));
+		WebElement Version = find(By.xpath("/html/body/div/my-app/mf-apps/div/div[2]/mf-translation/div/div/div[1]/div[2]/ux-select/div/input"));
 		Version.click();
 		Thread.sleep(5000);
 
@@ -79,7 +80,9 @@ public class DownloadCSVfilePage extends PageObject {
 		 Version.sendKeys(UserVersion);
 		 Thread.sleep(150);
 		 Version.sendKeys(Keys.ENTER);
+		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Version, " + "【" + UserVersion + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 		 }
+		 System.out.println();
 		 Thread.sleep(1000);
 
 		// 【PART 4】: 根据参数动态选择Language信息.
@@ -94,7 +97,7 @@ public class DownloadCSVfilePage extends PageObject {
 			System.out.println("----→" + spanL.getAttribute("textContent") + "←----");
 			AllLanguage.add(spanL.getAttribute("textContent"));
 		}
-
+		
 		System.out.println("################# " + AllLanguage.toArray().length + " #################");
 		
 		 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
@@ -102,7 +105,9 @@ public class DownloadCSVfilePage extends PageObject {
 		 Language.sendKeys(UserLanguage);
 		 Thread.sleep(300);
 		 Language.sendKeys(Keys.ENTER);
+		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + UserLanguage + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 		 }
+		 System.out.println();
 		 Thread.sleep(1000);
 	}
 

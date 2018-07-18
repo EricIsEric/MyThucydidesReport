@@ -1,5 +1,5 @@
 {"xref": {
-  "whenMade": 1531891768239,
+  "whenMade": 1531895974681,
   "createdBy": "JBehave",
   "metaFilter": "-ignore",
   "meta": [
@@ -16,8 +16,8 @@
       "scenarios": "Scenario:(1) Start to login the Openl10n site\u000aGiven Delete all cookies before start testing\u000aWhen the user has opened the Openl10n webpage\u000aThen the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page\u000aThen click the Login submit button of Openl10n Page\u000aThen the Openl10n main page should be displayed\u000a\u000a\u000aScenario:(2) Download the CSV file for one specific product\u000aThen Get values from the parameters\u000aThen click 'Download' button\u000a\u000a\u000a",
       "passed": true,
       "pending": false,
-      "started": 1531891623487,
-      "duration": 132963
+      "started": 1531895852188,
+      "duration": 118093
     }
   ],
   "stepMatches": []

@@ -1,4 +1,4 @@
-<acceptance-test-run title="(2) Download the CSV file for one specific product" name="(2) Download the CSV file for one specific product" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="75018" timestamp="2018-07-18T13:28:01.431+08:00">
+<acceptance-test-run title="(2) Download the CSV file for one specific product" name="(2) Download the CSV file for one specific product" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="74056" timestamp="2018-07-18T14:38:16.224+08:00">
   <user-story id="DownloadCSVfile" name="Download CS vfile" path="Thucydides/stories/consult_dictionary/DownloadCSVfile.story"/>
   <tags>
     <tag name="Login and then Download" type="feature"/>
@@ -10,7 +10,7 @@
       <screenshot image="4682662eae91a24bb09f9461b99dffc5_NONE.png"/>
       <screenshot image="58c93b30319b72eb9aea86935484ddcb_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="22710">
+    <test-step result="SUCCESS" duration="21782">
       <screenshots>
         <screenshot image="4682662eae91a24bb09f9461b99dffc5_NONE.png"/>
         <screenshot image="d47e9f7671ae906817440346d5d4a779_NONE.png"/>
@@ -21,12 +21,11 @@
   <test-group name="Then click &apos;Download&apos; button" result="SUCCESS">
     <screenshots>
       <screenshot image="d47e9f7671ae906817440346d5d4a779_NONE.png"/>
-      <screenshot image="146477076f5d1f61040e7b71cb5111e6_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="50923">
+    <test-step result="SUCCESS" duration="50936">
       <screenshots>
         <screenshot image="d47e9f7671ae906817440346d5d4a779_NONE.png"/>
-        <screenshot image="917243a86148af449a930d77d94ac8f6_NONE.png"/>
+        <screenshot image="3529948e9aa83712e748478101e79517_NONE.png"/>
       </screenshots>
       <description>Click down btn</description>
     </test-step>

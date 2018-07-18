@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="Thucydides.jbehave.Openl10nAcceptanceTestSuite" time="146.63" errors="0" skipped="0">
+<testsuite tests="12" failures="0" name="Thucydides.jbehave.Openl10nAcceptanceTestSuite" time="123.649" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
     <property name="java.vm.version" value="25.171-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\UX_Design\Desktop\backup\[MavenProject__0.9.200]\MyThucydidesReport"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\UX_Design\Desktop\backup\GitHub_PreCodeWorkspace\MyThucydidesReport3"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\UX_Design\Desktop\backup\[MavenProject__0.9.200]\MyThucydidesReport"/>
+    <property name="user.dir" value="C:\Users\UX_Design\Desktop\backup\GitHub_PreCodeWorkspace\MyThucydidesReport3"/>
     <property name="webdriver.driver" value="remote"/>
     <property name="java.runtime.version" value="1.8.0_171-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -28,7 +28,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\UX_Design\Desktop\backup\[MavenProject__0.9.200]\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7605001788408168184.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\UX_Design\Desktop\backup\GitHub_PreCodeWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf17937388455516078.tmp"/>
     <property name="sun.jnu.encoding" value="GBK"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/UX_Design/Desktop/1/BaiduYunDown/eclipse-java-oxygen-R-win32-x86_64/eclipse/jre/bin/server;C:/Users/UX_Design/Desktop/1/BaiduYunDown/eclipse-java-oxygen-R-win32-x86_64/eclipse/jre/bin;C:/Users/UX_Design/Desktop/1/BaiduYunDown/eclipse-java-oxygen-R-win32-x86_64/eclipse/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_144;C:\WINDOWS\System32\OpenSSH\;C:\apache-maven-3.5.3\bin;C:\_PersonalInstall\Git\cmd;C:\_PersonalInstall\Git;C:\_PersonalInstall\Git\bin;%M2_HOME%\bin;C:\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jre1.8.0_171\bin;C:\mvn_repo;C:\Users\UX_Design\Desktop\Grid;C:\Users\UX_Design\Desktop\1\PythonInstall\Python36\Scripts\;C:\Users\UX_Design\Desktop\1\PythonInstall\Python36\;C:\Users\UX_Design\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\UX_Design\AppData\Local\GitHubDesktop\bin;C:\Users\UX_Design\Desktop\1\BaiduYunDown\eclipse-java-oxygen-R-win32-x86_64\eclipse;;."/>
     <property name="story.names" value="consult_dictionary/*;"/>
@@ -68,16 +68,16 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="java.lang.Object" name="BeforeStories" time="0.023"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Given Delete all cookies before start testing" time="10.99"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="When the user has opened the Openl10n webpage" time="31.592"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page" time="2.793"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then click the Login submit button of Openl10n Page" time="1.741"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then the Openl10n main page should be displayed" time="0.985"/>
-  <testcase classname="Scenario: |1| Start to login the Openl10n site" name="Scenario: |1| Start to login the Openl10n site" time="1.294"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then Get values from the parameters" time="23.034"/>
-  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then click \&apos;Download\&apos; button" time="51.299"/>
-  <testcase classname="Scenario: |2| Download the CSV file for one specific product" name="Scenario: |2| Download the CSV file for one specific product" time="51.309"/>
-  <testcase classname="DownloadCSVfile.story" name="DownloadCSVfile.story" time="51.514"/>
-  <testcase classname="java.lang.Object" name="AfterStories" time="10.857"/>
+  <testcase classname="java.lang.Object" name="BeforeStories" time="0.021"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Given Delete all cookies before start testing" time="3.975"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="When the user has opened the Openl10n webpage" time="18.667"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page" time="1.928"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then click the Login submit button of Openl10n Page" time="1.565"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then the Openl10n main page should be displayed" time="1.065"/>
+  <testcase classname="Scenario: |1| Start to login the Openl10n site" name="Scenario: |1| Start to login the Openl10n site" time="1.398"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then Get values from the parameters" time="22.119"/>
+  <testcase classname="Thucydides.jbehave.DownloadCSVfile" name="Then click \&apos;Download\&apos; button" time="51.304"/>
+  <testcase classname="Scenario: |2| Download the CSV file for one specific product" name="Scenario: |2| Download the CSV file for one specific product" time="51.632"/>
+  <testcase classname="DownloadCSVfile.story" name="DownloadCSVfile.story" time="51.633"/>
+  <testcase classname="java.lang.Object" name="AfterStories" time="0.002"/>
 </testsuite>
