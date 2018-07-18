@@ -1,19 +1,16 @@
 <story path="Thucydides/stories/consult_dictionary/DownloadCSVfile.story" title="">
 <meta>
-<property keyword="@" name="feature" value="Login"/>
+<property keyword="@" name="feature" value="Login and then Download"/>
 </meta>
-<scenario keyword="Scenario:" title="Start to login the Openl10n site">
+<scenario keyword="Scenario:" title="(1) Start to login the Openl10n site">
 <step outcome="successful">Given Delete all cookies before start testing</step>
 <step outcome="successful">When the user has opened the Openl10n webpage</step>
 <step outcome="successful">Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page</step>
 <step outcome="successful">Then click the Login submit button of Openl10n Page</step>
 <step outcome="successful">Then the Openl10n main page should be displayed</step>
 </scenario>
-<scenario keyword="Scenario:" title="Download the CSV file for one specific product
-@feature Download">
-<step outcome="successful">Then select product as &apos;PPM&apos;</step>
-<step outcome="successful">Then select version as &apos;9.50&apos;</step>
-<step outcome="successful">Then select language as &apos;Finnish&apos;</step>
+<scenario keyword="Scenario:" title="(2) Download the CSV file for one specific product">
+<step outcome="successful">Then Get values from the parameters</step>
 <step outcome="successful">Then click &apos;Download&apos; button</step>
 </scenario>
 </story>

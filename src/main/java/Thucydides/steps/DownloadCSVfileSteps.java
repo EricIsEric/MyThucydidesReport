@@ -1,5 +1,7 @@
 package Thucydides.steps;
 
+
+
 import Thucydides.pages.BrowserObjectAndCommonMethodPage;
 import Thucydides.pages.DownloadCSVfilePage;
 import net.thucydides.core.annotations.Step;
@@ -28,22 +30,10 @@ public class DownloadCSVfileSteps {
 		downloadCSVfilePage.assertLoginSuccessfully();
 	}
 	
-	@Step
-	public void ClickProduct() throws Exception{
-		 Thread.sleep(20000);
-		 downloadCSVfilePage.getProduct();
-	}
 	
 	@Step
-	public void ClickVersion() throws Exception{
-		Thread.sleep(20000);
-		downloadCSVfilePage.getVersion();
-	}
-	
-	@Step
-	public void ClickLanguage() throws Exception{
-		Thread.sleep(20000);
-		downloadCSVfilePage.getLanguage();
+	public void StartDownCsv() throws Exception{
+		downloadCSVfilePage.DownCsvFile("CMS","10.40","Spanish (Spain)");
 	}
 	
 	@Step

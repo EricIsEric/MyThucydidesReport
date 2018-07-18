@@ -1,9 +1,9 @@
 <xref>
-  <whenMade>1531360778447</whenMade>
+  <whenMade>1531891768239</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta>
-    <string>feature=Login</string>
+    <string>feature=Login and then Download</string>
   </meta>
   <stories>
     <story>
@@ -12,9 +12,9 @@
       <name>DownloadCSVfile.story</name>
       <path>Thucydides/stories/consult_dictionary/DownloadCSVfile.story</path>
       <html>Thucydides.stories.consult_dictionary.DownloadCSVfile.html</html>
-      <meta>feature=Login
+      <meta>feature=Login and then Download
 </meta>
-      <scenarios>Scenario:Start to login the Openl10n site
+      <scenarios>Scenario:(1) Start to login the Openl10n site
 Given Delete all cookies before start testing
 When the user has opened the Openl10n webpage
 Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page
@@ -22,19 +22,16 @@ Then click the Login submit button of Openl10n Page
 Then the Openl10n main page should be displayed
 
 
-Scenario:Download the CSV file for one specific product&#xd;
-@feature Download
-Then select product as &apos;PPM&apos;
-Then select version as &apos;9.50&apos;
-Then select language as &apos;Finnish&apos;
+Scenario:(2) Download the CSV file for one specific product
+Then Get values from the parameters
 Then click &apos;Download&apos; button
 
 
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1531360611563</started>
-      <duration>163141</duration>
+      <started>1531891623487</started>
+      <duration>132963</duration>
     </story>
   </stories>
   <stepMatches/>
