@@ -59,7 +59,8 @@ public class DownloadCSVfilePage extends PageObject {
 		 
 
 		// 【PART 3】: 根据参数动态选择Version信息.
-		WebElement Version = find(By.xpath("/html/body/div/my-app/mf-apps/div/div[2]/mf-translation/div/div/div[1]/div[2]/ux-select/div/input"));
+		WebElement Version = find(By.xpath(
+				"/html/body/div/my-app/mf-apps/div/div[2]/mf-translation/div/div/div[1]/div[2]/ux-select/div/input"));
 		Version.click();
 		Thread.sleep(5000);
 
