@@ -36,7 +36,7 @@ public class DownloadCSVfileSteps {
 	
 	@Step
 	public void StartDownCsv() throws Exception{
-		downloadCSVfilePage.DownCsvFile(JenkinsProduct, JenkinsVersion, JenkinsLanguage);
+		downloadCSVfilePage.DownCsvFile(System.getProperty("JenkinsProduct"), System.getProperty("JenkinsVersion"), System.getProperty("JenkinsVersion"));
 	}
 	
 	@Step
