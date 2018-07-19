@@ -55,7 +55,9 @@ public class DownloadCSVfilePage extends PageObject {
 		 Thread.sleep(150);
 		 Product.sendKeys(Keys.ENTER);
 		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Product, " + "【" + UserProduct + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
-		 }
+		 }else {
+			 System.out.println("The current UserProduct is: " + UserProduct + ".");
+		}
 		 System.out.println();
 		 Thread.sleep(1000);
 		 
@@ -81,7 +83,9 @@ public class DownloadCSVfilePage extends PageObject {
 		 Thread.sleep(150);
 		 Version.sendKeys(Keys.ENTER);
 		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Version, " + "【" + UserVersion + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
-		 }
+		 }else {
+				System.out.println("The current UserVersion is: " + UserVersion + ".");
+			}
 		 System.out.println();
 		 Thread.sleep(1000);
 
@@ -106,7 +110,9 @@ public class DownloadCSVfilePage extends PageObject {
 		 Thread.sleep(300);
 		 Language.sendKeys(Keys.ENTER);
 		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + UserLanguage + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
-		 }
+		 }else {
+			 System.out.println("The current UserLanguage is: " + UserLanguage + ".");
+		}
 		 System.out.println();
 		 Thread.sleep(1000);
 	}
