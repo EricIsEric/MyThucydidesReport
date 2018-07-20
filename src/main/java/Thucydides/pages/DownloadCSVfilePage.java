@@ -107,7 +107,7 @@ public class DownloadCSVfilePage extends PageObject {
 		 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
 		 if(AllLanguage.contains(UserLanguage)) {
 		 Language.sendKeys(UserLanguage);
-		 Thread.sleep(300);
+		 Thread.sleep(1000);
 		 Language.sendKeys(Keys.ENTER);
 		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + UserLanguage + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 		 }else {
