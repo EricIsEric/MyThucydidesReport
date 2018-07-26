@@ -107,7 +107,7 @@ public class DownloadCSVfilePage extends PageObject {
 		 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
 		 String UL;
 		 String FinalLang;
-		 UL=UserLanguage.replaceAll(" ","");  //<==这里同样加上replaceAll尝试去掉空格符号==>
+		 UL=UserLanguage.replace(" ","");  //<==这里同样加上replaceAll尝试去掉空格符号==>
 		 if(AllLanguage.contains(UL)) {
 			 
 			 
