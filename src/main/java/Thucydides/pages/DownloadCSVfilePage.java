@@ -98,7 +98,7 @@ public class DownloadCSVfilePage extends PageObject {
 		ArrayList<String> AllLanguage = new ArrayList<String>();
 		List<WebElementFacade> allSpansL = findAll(org.openqa.selenium.By.cssSelector("span"));
 		for (WebElementFacade spanL : allSpansL) {
-			System.out.println("----→" + spanL.getAttribute("textContent") + "←----");
+			System.out.println("----→" + spanL.getAttribute("textContent").replaceAll("\\pZ","") + "←----");   //<==加上replaceAll尝试去掉空格符号==>
 			AllLanguage.add((spanL.getAttribute("textContent")).replaceAll("\\pZ",""));  //<==加上replaceAll尝试去掉空格符号==>
 		}
 		
