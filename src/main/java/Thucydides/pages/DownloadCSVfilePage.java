@@ -114,13 +114,15 @@ public class DownloadCSVfilePage extends PageObject {
 			 if(UL.contains(")")) {
 				 FinalLang=UL.substring(0, UL.indexOf("(")) + " " +  UL.substring(UL.indexOf("("));
 				 Language.sendKeys(FinalLang);
+				 Thread.sleep(300);
+				 Language.sendKeys(Keys.ENTER);
+				 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + FinalLang + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 			 }else {
-				 Language.sendKeys(UL);
+				 Language.sendKeys(UserLanguage);
+				 Thread.sleep(300);
+				 Language.sendKeys(Keys.ENTER);
+				 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + UserLanguage + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 			}
-			 
-			 Thread.sleep(300);
-			 Language.sendKeys(Keys.ENTER);
-			 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + UserLanguage + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 			 
 		 }else {
 			 System.out.println("The current UserLanguage is: " + UserLanguage + ".");
