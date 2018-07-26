@@ -98,31 +98,39 @@ public class DownloadCSVfilePage extends PageObject {
 		ArrayList<String> AllLanguage = new ArrayList<String>();
 		List<WebElementFacade> allSpansL = findAll(org.openqa.selenium.By.cssSelector("span"));
 		for (WebElementFacade spanL : allSpansL) {
-			System.out.println("----→" + spanL.getAttribute("textContent").replace(" ","") + "←----");   
-			AllLanguage.add((spanL.getAttribute("textContent")).replace(" ",""));  //<==将获取到的原始的下拉列表数据的空格删除后再添加到列表中==>
+			System.out.println("----→" + spanL.getAttribute("textContent") + "←----");   
+			AllLanguage.add((spanL.getAttribute("textContent")));  //<==将获取到的原始的下拉列表数据的空格删除后再添加到列表中==>
 		}
-		
+
 		System.out.println("################# " + AllLanguage.toArray().length + " #################");
-		
-		 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
+
+
+		//Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
 		 String UL;
 		 String FinalLang;
-		 UL=UserLanguage.replace(" ","");  //此处为了防止从Jenkins传过来带空格的字符从而影响之后的判断,但其实如果Jenkins端输入带空格的语言会导致UserLanguage接收到的值不完整
+		 UL=UserLanguage;  //此处为了防止从Jenkins传过来带空格的字符从而影响之后的判断,但其实如果Jenkins端输入带空格的语言会导致UserLanguage接收到的值不完整
 		 if(AllLanguage.contains(UL)) {
 			 
 			 
-			 if(UL.contains(")")) {
+			 if(UL.contains(")") && !UL.contains(" ")) {
 				 FinalLang=UL.substring(0, UL.indexOf("(")) + " " +  UL.substring(UL.indexOf("("));
 				 Language.sendKeys(FinalLang);
 				 Thread.sleep(300);
 				 Language.sendKeys(Keys.ENTER);
 				 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + FinalLang + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
-			 }else {
-				 Language.sendKeys(UserLanguage);
+			 }else if(UL.contains(")") && UL.contains(" ")) {
+				 UL = UL.replace(" ", "");
+				 FinalLang=UL.substring(0, UL.indexOf("(")) + " " +  UL.substring(UL.indexOf("("));
+				 Language.sendKeys(FinalLang);
 				 Thread.sleep(300);
 				 Language.sendKeys(Keys.ENTER);
-				 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + UserLanguage + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
-			}
+				 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + FinalLang + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
+			    }else{
+					Language.sendKeys(UserLanguage);
+					Thread.sleep(300);
+					Language.sendKeys(Keys.ENTER);
+					System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + UserLanguage + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
+				}
 			 
 		 }else {
 			 System.out.println("The current UserLanguage is: " + UserLanguage + ".");
