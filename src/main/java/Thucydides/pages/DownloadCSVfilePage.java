@@ -52,7 +52,7 @@ public class DownloadCSVfilePage extends PageObject {
 		 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
 		 if(AllProduct.contains(UserProduct)) {
 		 Product.sendKeys(UserProduct);
-		 Thread.sleep(1000);
+		 Thread.sleep(150);
 		 Product.sendKeys(Keys.ENTER);
 		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Product, " + "【" + UserProduct + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 		 }else {
@@ -80,12 +80,12 @@ public class DownloadCSVfilePage extends PageObject {
 		 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
 		 if(AllVersion.contains(UserVersion)) {
 		 Version.sendKeys(UserVersion);
-		 Thread.sleep(1000);
+		 Thread.sleep(150);
 		 Version.sendKeys(Keys.ENTER);
 		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Version, " + "【" + UserVersion + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 		 }else {
-				System.out.println("The current UserVersion is: " + UserVersion + ".");
-			}
+			System.out.println("The current UserVersion is: " + UserVersion + ".");
+		}
 		 System.out.println();
 		 Thread.sleep(1000);
 
@@ -99,15 +99,15 @@ public class DownloadCSVfilePage extends PageObject {
 		List<WebElementFacade> allSpansL = findAll(org.openqa.selenium.By.cssSelector("span"));
 		for (WebElementFacade spanL : allSpansL) {
 			System.out.println("----→" + spanL.getAttribute("textContent") + "←----");
-			AllLanguage.add(spanL.getAttribute("textContent"));
+			AllLanguage.add((spanL.getAttribute("textContent")).replaceAll("\\pZ",""));  //<==加上replaceAll尝试去掉空格符号==>
 		}
 		
 		System.out.println("################# " + AllLanguage.toArray().length + " #################");
 		
 		 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
-		 if(AllLanguage.contains(UserLanguage)) {
+		 if(AllLanguage.contains(UserLanguage.replaceAll("\\pZ",""))) {   //<==这里同样加上replaceAll尝试去掉空格符号==>
 		 Language.sendKeys(UserLanguage);
-		 Thread.sleep(1000);
+		 Thread.sleep(300);
 		 Language.sendKeys(Keys.ENTER);
 		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + UserLanguage + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 		 }else {
