@@ -98,8 +98,8 @@ public class DownloadCSVfilePage extends PageObject {
 		ArrayList<String> AllLanguage = new ArrayList<String>();
 		List<WebElementFacade> allSpansL = findAll(org.openqa.selenium.By.cssSelector("span"));
 		for (WebElementFacade spanL : allSpansL) {
-			System.out.println("----→" + spanL.getAttribute("textContent").replaceAll("\\pZ","") + "←----");   //<==加上replaceAll尝试去掉空格符号==>
-			AllLanguage.add((spanL.getAttribute("textContent")).replaceAll("\\pZ",""));  //<==加上replaceAll尝试去掉空格符号==>
+			System.out.println("----→" + spanL.getAttribute("textContent").replace(" ","") + "←----");   
+			AllLanguage.add((spanL.getAttribute("textContent")).replace(" ",""));  //<==将获取到的原始的下拉列表数据的空格删除后再添加到列表中==>
 		}
 		
 		System.out.println("################# " + AllLanguage.toArray().length + " #################");
@@ -107,7 +107,7 @@ public class DownloadCSVfilePage extends PageObject {
 		 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
 		 String UL;
 		 String FinalLang;
-		 UL=UserLanguage.replace(" ","");  //<==这里同样加上replaceAll尝试去掉空格符号==>
+		 UL=UserLanguage.replace(" ","");  //此处为了防止从Jenkins传过来带空格的字符从而影响之后的判断,但其实如果Jenkins端输入带空格的语言会导致UserLanguage接收到的值不完整
 		 if(AllLanguage.contains(UL)) {
 			 
 			 
