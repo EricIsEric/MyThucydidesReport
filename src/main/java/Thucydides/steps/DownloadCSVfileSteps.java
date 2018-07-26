@@ -7,7 +7,6 @@ import Thucydides.pages.DownloadCSVfilePage;
 import net.thucydides.core.annotations.Step;
 
 public class DownloadCSVfileSteps {
-	
 	BrowserObjectAndCommonMethodPage browserObjectAndCommonMethodPage;
 	DownloadCSVfilePage downloadCSVfilePage;
 	
@@ -34,7 +33,7 @@ public class DownloadCSVfileSteps {
 	
 	@Step
 	public void StartDownCsv() throws Exception{
-		downloadCSVfilePage.DownCsvFile(System.getProperty("JenkinsProduct"), System.getProperty("JenkinsVersion"), System.getProperty("JenkinsLanguage"));
+		downloadCSVfilePage.DownCsvFile(System.getProperty("JenkinsProduct"), System.getProperty("JenkinsVersion"), System.getProperty("'JenkinsLanguage'"));
 	}
 	
 	@Step
