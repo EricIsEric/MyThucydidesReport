@@ -52,7 +52,7 @@ public class DownloadCSVfilePage extends PageObject {
 		 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
 		 if(AllProduct.contains(UserProduct)) {
 		 Product.sendKeys(UserProduct);
-		 Thread.sleep(150);
+		 Thread.sleep(1500);
 		 Product.sendKeys(Keys.ENTER);
 		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Product, " + "【" + UserProduct + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 		 }else {
@@ -80,7 +80,7 @@ public class DownloadCSVfilePage extends PageObject {
 		 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
 		 if(AllVersion.contains(UserVersion)) {
 		 Version.sendKeys(UserVersion);
-		 Thread.sleep(150);
+		 Thread.sleep(1500);
 		 Version.sendKeys(Keys.ENTER);
 		 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Version, " + "【" + UserVersion + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 		 }else {
@@ -107,7 +107,7 @@ public class DownloadCSVfilePage extends PageObject {
 			 //Step2: 判断用户的输入是不是在当前下拉列表的值的数组里,如果在,就填入这个位置中并且输入回车键确认
 			 if(AllLanguage.contains(UserLanguage)) {
 				 Language.sendKeys(UserLanguage);
-				 Thread.sleep(1000);
+				 Thread.sleep(1500);
 				 Language.sendKeys(Keys.ENTER);
 				 System.out.println("$$$$$$$$$$$$$$$ " + "For this time of Language, " + "【" + UserLanguage + "】" + "has been selected." + " $$$$$$$$$$$$$$$");
 			 }else {
