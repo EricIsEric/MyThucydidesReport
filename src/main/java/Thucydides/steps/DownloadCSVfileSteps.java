@@ -28,6 +28,7 @@ public class DownloadCSVfileSteps {
 	@Step
 	public void LoginAssertion() throws InterruptedException {
 		downloadCSVfilePage.assertLoginSuccessfully();
+		Thread.sleep(3000);
 	}
 	
 	
