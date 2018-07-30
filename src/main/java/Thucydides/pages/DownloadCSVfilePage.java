@@ -119,7 +119,7 @@ public class DownloadCSVfilePage extends PageObject {
 
 	public void ClickDownloadBtn() throws Exception {
 		WebElementFacade ClickDownloadBtn = find(
-				By.xpath("/html/body/div/my-app/mf-apps/div/div[2]/mf-translation/div/div/div[2]/div/button[1]"));
+				By.xpath("/html/body/app-root/div/app-applications/div/div/mf-translation/div/div/div[2]/div/button[1]"));
 		ClickDownloadBtn.click();
 		Thread.sleep(30000);
 	}
