@@ -1,52 +1,51 @@
-<acceptance-test-run title="(1) Start to login the Openl10n site" name="(1) Start to login the Openl10n site" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="43796" timestamp="2018-07-18T14:37:32.243+08:00">
+<acceptance-test-run title="(1) Start to login the Openl10n site" name="(1) Start to login the Openl10n site" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="45285" timestamp="2018-07-30T14:30:27.740+08:00">
   <user-story id="DownloadCSVfile" name="Download CS vfile" path="Thucydides/stories/consult_dictionary/DownloadCSVfile.story"/>
   <tags>
     <tag name="Login and then Download" type="feature"/>
     <tag name="Consult dictionary/Download CS vfile" type="story"/>
     <tag name="Download CS vfile" type="story"/>
   </tags>
-  <test-step result="SUCCESS" duration="3969">
+  <test-step result="SUCCESS" duration="5342">
     <description>Given Delete all cookies before start testing</description>
   </test-step>
-  <test-step result="SUCCESS" duration="19232">
+  <test-step result="SUCCESS" duration="18538">
     <screenshots>
-      <screenshot image="908f446431976eed9c25a680659805e0_NONE.png"/>
+      <screenshot image="0cfabdf2af64ab3e9ad5ca4235ee3c56_NONE.png"/>
     </screenshots>
     <description>When the user has opened the Openl10n webpage</description>
   </test-step>
   <test-group name="Then the user enters username 15202184317@qq.com and password 123qwe!@#QWE to Openl10n login page" result="SUCCESS">
     <screenshots>
-      <screenshot image="85d75c0caaacf472c951a28170a253d7_NONE.png"/>
-      <screenshot image="4d229685a3aa8a2733d3d06628b72b4a_NONE.png"/>
+      <screenshot image="7e4585cd124c3811774ac7818e57f0b1_NONE.png"/>
+      <screenshot image="0514842d3c210691b45f887e60aea21f_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="1428">
+    <test-step result="SUCCESS" duration="1320">
       <screenshots>
-        <screenshot image="46e56e87e57e78744864da448e822c10_NONE.png"/>
-        <screenshot image="20423bfe8ae2ba1a4424536348a9559b_NONE.png"/>
+        <screenshot image="b28cee530bf3e6cccee1e18ead0dba1b_NONE.png"/>
+        <screenshot image="799ecf1a499a4c624cebacda4e74cdfc_NONE.png"/>
       </screenshots>
       <description>Enter un pwd: &lt;span class=&apos;step-parameter&apos;&gt;15202184317@qq.com, 123qwe!@#QWE&lt;/span&gt;</description>
     </test-step>
   </test-group>
   <test-group name="Then click the Login submit button of Openl10n Page" result="SUCCESS">
     <screenshots>
-      <screenshot image="20423bfe8ae2ba1a4424536348a9559b_NONE.png"/>
-      <screenshot image="4682662eae91a24bb09f9461b99dffc5_NONE.png"/>
+      <screenshot image="731f2c2c6e8aafdb99d9f4e2427eeaa5_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="1104">
+    <test-step result="SUCCESS" duration="823">
       <screenshots>
-        <screenshot image="20423bfe8ae2ba1a4424536348a9559b_NONE.png"/>
-        <screenshot image="a28ccc4f227a3bd634280ba6bc0c705d_NONE.png"/>
+        <screenshot image="799ecf1a499a4c624cebacda4e74cdfc_NONE.png"/>
+        <screenshot image="9d5db922ac3fbbe7c4bf8db6a1a32be2_NONE.png"/>
       </screenshots>
       <description>Click submit btn</description>
     </test-step>
   </test-group>
   <test-group name="Then the Openl10n main page should be displayed" result="SUCCESS">
     <screenshots>
-      <screenshot image="4682662eae91a24bb09f9461b99dffc5_NONE.png"/>
+      <screenshot image="47c7529c13fe3711257d52f202fe8904_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="704">
+    <test-step result="SUCCESS" duration="3604">
       <screenshots>
-        <screenshot image="4682662eae91a24bb09f9461b99dffc5_NONE.png"/>
+        <screenshot image="47c7529c13fe3711257d52f202fe8904_NONE.png"/>
       </screenshots>
       <description>Login assertion</description>
     </test-step>

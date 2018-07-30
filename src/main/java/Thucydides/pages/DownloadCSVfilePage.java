@@ -35,7 +35,7 @@ public class DownloadCSVfilePage extends PageObject {
 
 	public void DownCsvFile(String UserProduct, String UserVersion, String UserLanguage) throws Exception {
 		// 【PART 2】: 根据参数动态选择Product信息.
-		WebElement Product = find(By.xpath("html/body/div/my-app/mf-apps/div/div[2]/mf-translation/div/div/div[1]/div[1]/ux-select/div/input"));
+		WebElement Product = find(By.xpath("/html/body/app-root/div/app-applications/div/div/mf-translation/div/div/div[1]/div/div[1]/ux-select/div/input"));
 		Product.click();
 		Thread.sleep(5000);
 
@@ -63,7 +63,7 @@ public class DownloadCSVfilePage extends PageObject {
 		 
 
 		// 【PART 3】: 根据参数动态选择Version信息.
-		WebElement Version = find(By.xpath("/html/body/div/my-app/mf-apps/div/div[2]/mf-translation/div/div/div[1]/div[2]/ux-select/div/input"));
+		WebElement Version = find(By.xpath("/html/body/app-root/div/app-applications/div/div/mf-translation/div/div/div[1]/div/div[2]/ux-select/div/input"));
 		Version.click();
 		Thread.sleep(5000);
 
@@ -90,7 +90,7 @@ public class DownloadCSVfilePage extends PageObject {
 		 Thread.sleep(1000);
 
 		// 【PART 4】: 根据参数动态选择Language信息.
-			WebElement Language = find(By.xpath("/html/body/div/my-app/mf-apps/div/div[2]/mf-translation/div/div/div[1]/div[3]/ux-select/div/input"));
+			WebElement Language = find(By.xpath("/html/body/app-root/div/app-applications/div/div/mf-translation/div/div/div[1]/div/div[3]/ux-select/div/input"));
 			Language.click();
 			Thread.sleep(5000);
 
