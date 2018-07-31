@@ -61,4 +61,11 @@ public class BrowserObjectAndCommonMethodPage extends PageObject {
 		 Thread.sleep(1000);
     }
 
+	public void FinalDown(String BtnPath) throws Exception {
+		WebElementFacade ClickDownloadBtn = find(By.xpath(BtnPath));
+		ClickDownloadBtn.click();
+		Thread.sleep(30000);
+		
+	}
+
 }

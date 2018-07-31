@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 
 import net.thucydides.core.annotations.findby.By;
 import net.thucydides.core.pages.PageObject;
-import net.thucydides.core.pages.WebElementFacade;
 
 public class DownloadCSVfilePage extends PageObject {
 	
@@ -38,10 +37,9 @@ public class DownloadCSVfilePage extends PageObject {
 	}
 
 	public void ClickDownloadBtn() throws Exception {
-		WebElementFacade ClickDownloadBtn = find(
-				By.xpath("/html/body/app-root/div/app-applications/div/div/mf-translation/div/div/div[2]/div/button[1]"));
-		ClickDownloadBtn.click();
-		Thread.sleep(30000);
+		
+		browserObjectAndCommonMethodPage.FinalDown("/html/body/app-root/div/app-applications/div/div/mf-translation/div/div/div[2]/div/button[1]");
+		
 	}
 
 }
