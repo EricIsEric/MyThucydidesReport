@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>Thucydides</groupId>
-    <artifactId>MyThucydidesReport</artifactId>
+    <artifactId>MyThucydidesReport2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 	<name>Openl10n_Login</name>
@@ -109,13 +109,6 @@
 		    <version>2.3.0</version>
 		</dependency>
 		
-		
-		<dependency>
-		    <groupId>org.apache.maven.shared</groupId>
-		    <artifactId>maven-artifact-transfer</artifactId>
-		    <version>0.10.0</version>
-		</dependency>
-				
 		
 		
 		
