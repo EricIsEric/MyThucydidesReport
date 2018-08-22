@@ -69,8 +69,7 @@ public class Openl10nTestSuiteSteps {
 	
 	@Step
 	public void RunRisk1Exe() throws Exception {
-		java.awt.Desktop.getDesktop().open(new File("C:\\temp\\test.zip"));
-		//\\\\192.168.137.1\\ShareTest\\RiskTest\\Risk_EmptyZip\\PPM_9.50_fi.exe
+		java.awt.Desktop.getDesktop().open(new File("../../../../../../\\RiskTest\\Risk_EmptyZip\\PPM_9.50_fi.exe"));
 		Thread.sleep(10000);
 	}
 	
@@ -81,7 +80,7 @@ public class Openl10nTestSuiteSteps {
 	
 	@Step
 	public void RunRisk2Exe() throws Exception {
-		java.awt.Desktop.getDesktop().open(new File("C:\\RiskTest\\Risk_DisallowedJpgFileType\\PPM_9.50_fi.exe"));
+		java.awt.Desktop.getDesktop().open(new File("../../../../../../\\RiskTest\\Risk_DisallowedJpgFileType\\PPM_9.50_fi.exe"));
 		Thread.sleep(10000);
 	}
 	
