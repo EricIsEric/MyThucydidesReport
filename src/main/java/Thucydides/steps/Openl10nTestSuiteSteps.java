@@ -37,6 +37,7 @@ public class Openl10nTestSuiteSteps {
 	@Step
 	public void StartDownCsv() throws Exception{
 		openl10nTestSuitePage.DownCsvFile(System.getProperty("JenkinsProduct"),System.getProperty("JenkinsVersion"), System.getProperty("JenkinsLanguage"));
+//		openl10nTestSuitePage.DownCsvFile("PPM","9.50","Finnish");
 	}
 	
 	@Step
@@ -68,7 +69,7 @@ public class Openl10nTestSuiteSteps {
 	
 	@Step
 	public void RunRisk1Exe() throws Exception {
-		java.awt.Desktop.getDesktop().open(new File("C:\\RiskTest\\Risk_EmptyZip\\PPM_9.50_fi.exe"));
+		java.awt.Desktop.getDesktop().open(new File("\\\\192.168.137.1\\ShareTest\\RiskTest\\Risk_EmptyZip\\PPM_9.50_fi.exe"));
 		Thread.sleep(10000);
 	}
 	
