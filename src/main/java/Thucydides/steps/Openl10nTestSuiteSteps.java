@@ -69,7 +69,7 @@ public class Openl10nTestSuiteSteps {
 	
 	@Step
 	public void RunRisk1Exe() throws Exception {
-		java.awt.Desktop.getDesktop().open(new File("../../../../../../\\RiskTest\\Risk_EmptyZip\\PPM_9.50_fi.exe"));
+		java.awt.Desktop.getDesktop().open(new File("../../../../../../\\RiskTest\\Risk_EmptyZip\\PPM_9.50_fi.zip"));
 		Thread.sleep(10000);
 	}
 	
@@ -93,14 +93,6 @@ public class Openl10nTestSuiteSteps {
 	public void Risk2Result() throws Exception {
 		openl10nTestSuitePage.Risk2ResultAssert();
 	}
-	
-	
-
-	
-
-	
-
-	
 
 	
 }
