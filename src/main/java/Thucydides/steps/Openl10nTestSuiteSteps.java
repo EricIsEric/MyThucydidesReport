@@ -3,6 +3,7 @@ package Thucydides.steps;
 
 
 import java.io.File;
+import java.net.URL;
 
 import Thucydides.pages.BrowserObjectAndCommonMethodPage;
 import Thucydides.pages.Openl10nTestSuitePage;
@@ -36,8 +37,8 @@ public class Openl10nTestSuiteSteps {
 	
 	@Step
 	public void StartDownCsv() throws Exception{
-		openl10nTestSuitePage.DownCsvFile(System.getProperty("JenkinsProduct"),System.getProperty("JenkinsVersion"), System.getProperty("JenkinsLanguage"));
-//		openl10nTestSuitePage.DownCsvFile("PPM","9.50","Finnish");
+//		openl10nTestSuitePage.DownCsvFile(System.getProperty("JenkinsProduct"),System.getProperty("JenkinsVersion"), System.getProperty("JenkinsLanguage"));
+		openl10nTestSuitePage.DownCsvFile("PPM","9.50","Finnish");
 	}
 	
 	@Step
@@ -69,7 +70,8 @@ public class Openl10nTestSuiteSteps {
 	
 	@Step
 	public void RunRisk1Exe() throws Exception {
-		java.awt.Desktop.getDesktop().open(new File("C:\\RiskTest\\Risk_EmptyZip\\PPM_9.50_fi.zip"));
+		File file = new File("src/test/resources/autoITScript/PPM_9.50_fi.exe");
+		java.awt.Desktop.getDesktop().open(file);
 		Thread.sleep(10000);
 	}
 	
