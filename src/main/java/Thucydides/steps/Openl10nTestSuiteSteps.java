@@ -40,8 +40,8 @@ public class Openl10nTestSuiteSteps {
 	
 	@Step
 	public void StartDownCsv() throws Exception{
-//		openl10nTestSuitePage.DownCsvFile(System.getProperty("JenkinsProduct"),System.getProperty("JenkinsVersion"), System.getProperty("JenkinsLanguage"));
-		openl10nTestSuitePage.DownCsvFile("PPM","9.50","Finnish");
+		openl10nTestSuitePage.DownCsvFile(System.getProperty("JenkinsProduct"),System.getProperty("JenkinsVersion"), System.getProperty("JenkinsLanguage"));
+//		openl10nTestSuitePage.DownCsvFile("PPM","9.50","Finnish");
 	}
 	
 	@Step
@@ -71,11 +71,12 @@ public class Openl10nTestSuiteSteps {
 		Thread.sleep(2000);
 	}
 	
+	@SuppressWarnings("static-access")
 	@Step
 	public void RunRisk1Exe() throws Exception {
 		logger.info("Into:  RunRisk1Exe()----------------------------");
 		Thread.sleep(5000);
-		File file = new File("src/test/resources/autoITScript/PPM_9.50_fi.exe");
+		File file = new File("src/test/resources/autoItScript/Risk01_EmptyZipFile/PPM_9.50_fi.exe");
 		browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath());
 		java.awt.Desktop.getDesktop().open(file);
 		Thread.sleep(5000);
