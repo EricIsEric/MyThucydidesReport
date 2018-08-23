@@ -4,6 +4,8 @@ package Thucydides.steps;
 
 import java.io.File;
 import java.net.URL;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import Thucydides.pages.BrowserObjectAndCommonMethodPage;
 import Thucydides.pages.Openl10nTestSuitePage;
@@ -12,6 +14,7 @@ import net.thucydides.core.annotations.Step;
 public class Openl10nTestSuiteSteps {
 	BrowserObjectAndCommonMethodPage browserObjectAndCommonMethodPage;
 	Openl10nTestSuitePage openl10nTestSuitePage;
+	private static Logger logger = LoggerFactory.getLogger(Openl10nTestSuiteSteps.class);
 	
 	@Step
 	public void deleteAllCookies() throws Exception{
@@ -70,9 +73,17 @@ public class Openl10nTestSuiteSteps {
 	
 	@Step
 	public void RunRisk1Exe() throws Exception {
+		logger.info("Into:  RunRisk1Exe()----------------------------");
+		Thread.sleep(5000);
+		
 		File file = new File("src/test/resources/autoITScript/PPM_9.50_fi.exe");
+		if(file.exists()) {
+			logger.info("found file: "+file.getAbsolutePath()+"------------");
+		}
+		logger.info("open file---------------");
 		java.awt.Desktop.getDesktop().open(file);
-		Thread.sleep(10000);
+		logger.info("finish open file------------");
+		Thread.sleep(5000);
 	}
 	
 	@Step
