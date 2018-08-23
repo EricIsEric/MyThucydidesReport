@@ -4,6 +4,8 @@ package Thucydides.steps;
 
 import java.io.File;
 import java.net.URL;
+
+import org.junit.experimental.theories.Theories;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -75,15 +77,11 @@ public class Openl10nTestSuiteSteps {
 	public void RunRisk1Exe() throws Exception {
 		logger.info("Into:  RunRisk1Exe()----------------------------");
 		Thread.sleep(5000);
-		
 		File file = new File("src/test/resources/autoITScript/PPM_9.50_fi.exe");
-		if(file.exists()) {
-			logger.info("found file: "+file.getAbsolutePath()+"------------");
-		}
-		logger.info("open file---------------");
+		browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath());
 		java.awt.Desktop.getDesktop().open(file);
-		logger.info("finish open file------------");
 		Thread.sleep(5000);
+		logger.info("Exit:  RunRisk1Exe()----------------------------");
 	}
 	
 	@Step

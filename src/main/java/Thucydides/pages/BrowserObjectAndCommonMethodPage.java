@@ -4,7 +4,10 @@ import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +15,8 @@ import javax.imageio.ImageIO;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import net.thucydides.core.annotations.findby.By;
 import net.thucydides.core.pages.PageObject;
@@ -22,6 +27,9 @@ import net.thucydides.core.pages.WebElementFacade;
  */
 
 public class BrowserObjectAndCommonMethodPage extends PageObject {
+	
+	private static Logger logger = LoggerFactory.getLogger(BrowserObjectAndCommonMethodPage.class);
+	
     public void openURL(String url) {
 
         getDriver().get(url);
@@ -144,4 +152,19 @@ public class BrowserObjectAndCommonMethodPage extends PageObject {
 		ImageIO.write(screenFullImage, "png", new File("C:\\_ScreenShot\\FullScreenshotRobot.png"));
 		System.out.println("Full Desktop screenshot saved!");
 	}
+	
+	public static String executeCmd(String command) throws IOException {  
+		logger.info("Into executeCmd()");
+	    Runtime runtime = Runtime.getRuntime();  
+	    Process process = runtime.exec("cmd /c " + command);  
+	    BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream(), "UTF-8"));  
+	    String line = null;  
+	    StringBuilder build = new StringBuilder();  
+	    while ((line = br.readLine()) != null) {  
+	    	logger.info(line);  
+	        build.append(line);  
+	    }  
+	    return build.toString();  
+	}  
+	  
 }
