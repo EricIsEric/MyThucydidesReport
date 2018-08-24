@@ -92,8 +92,6 @@ public class Openl10nTestSuiteSteps {
 		logger.info("=-=-=-=-=-=-Ending Runtime=-=-=-=-=-=-");
 		run.exec(file.getAbsolutePath());*/
 		Thread.sleep(5000);
-		browserObjectAndCommonMethodPage.CloseOpenTest();
-		Thread.sleep(5000);
 		logger.info("Exit:  RunRisk1Exe()----------------------------"+file.getAbsolutePath().replace('\\', '/'));
 	}
 	

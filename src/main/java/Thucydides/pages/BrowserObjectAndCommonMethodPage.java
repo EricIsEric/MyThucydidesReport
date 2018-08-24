@@ -173,12 +173,5 @@ public class BrowserObjectAndCommonMethodPage extends PageObject {
 		}
 		return build.toString();
 	}
-	
-	public void CloseOpenTest() {
-		if(getDriver().switchTo().defaultContent()!=null) {
-			getDriver().switchTo().defaultContent().close();
-		}
-		
-	}
 
 }
