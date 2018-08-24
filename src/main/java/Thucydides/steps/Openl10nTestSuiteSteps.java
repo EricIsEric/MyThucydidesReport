@@ -40,8 +40,8 @@ public class Openl10nTestSuiteSteps {
 	
 	@Step
 	public void StartDownCsv() throws Exception{
-		openl10nTestSuitePage.DownCsvFile(System.getProperty("JenkinsProduct"),System.getProperty("JenkinsVersion"), System.getProperty("JenkinsLanguage"));
-//		openl10nTestSuitePage.DownCsvFile("PPM","9.50","Finnish");
+//		openl10nTestSuitePage.DownCsvFile(System.getProperty("JenkinsProduct"),System.getProperty("JenkinsVersion"), System.getProperty("JenkinsLanguage"));
+		openl10nTestSuitePage.DownCsvFile("PPM","9.50","Finnish");
 	}
 	
 	@Step
@@ -78,9 +78,9 @@ public class Openl10nTestSuiteSteps {
 		File file = new File("src/test/resources/autoItScript/Risk01_EmptyZipFile/PPM_9.50_fi.exe");
 		/*browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath());
 		java.awt.Desktop.getDesktop().open(file);  //这里或许可以不用open file*/
-		Runtime.getRuntime().exec("C:/Windows/System32/cmd.exe /k start "+file.getAbsolutePath().replace('\\', '/'));
+		Runtime.getRuntime().exec(file.getAbsolutePath());
 		Thread.sleep(5000);
-		logger.info("Exit:  RunRisk1Exe()----------------------------"+"C:/Windows/System32/cmd.exe /k start "+file.getAbsolutePath().replace('\\', '/'));
+		logger.info("Exit:  RunRisk1Exe()----------------------------"+file.getAbsolutePath());
 	}
 	
 	@Step
