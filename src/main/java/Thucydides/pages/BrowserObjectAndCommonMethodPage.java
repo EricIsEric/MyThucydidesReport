@@ -175,8 +175,8 @@ public class BrowserObjectAndCommonMethodPage extends PageObject {
 	}
 	
 	public void CloseOpenTest() {
-		if(getDriver().switchTo().window("打开")!=null) {
-			getDriver().switchTo().defaultContent();
+		if(getDriver().switchTo().defaultContent()!=null) {
+			getDriver().switchTo().defaultContent().close();
 		}
 		
 	}
