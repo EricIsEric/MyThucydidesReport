@@ -78,7 +78,17 @@ public class Openl10nTestSuiteSteps {
 		File file = new File("src/test/resources/autoItScript/Risk01_EmptyZipFile/PPM_9.50_fi.exe");
 		/*browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath());
 		java.awt.Desktop.getDesktop().open(file);  //这里或许可以不用open file*/
-		Runtime.getRuntime().exec(file.getAbsolutePath());
+		logger.info("=-=-=-=-=-=-Starting Runtime=-=-=-=-=-=-");
+		Thread.sleep(10000);
+		Runtime run = Runtime.getRuntime();
+		if(run!=null) {
+			System.out.println("Get Run Successfully!");
+		}else {
+			System.out.println("GET RUN FAILED!!!");
+		}
+		Thread.sleep(10000);
+		logger.info("=-=-=-=-=-=-Ending Runtime=-=-=-=-=-=-");
+		run.exec(file.getAbsolutePath());
 		Thread.sleep(5000);
 		logger.info("Exit:  RunRisk1Exe()----------------------------"+file.getAbsolutePath());
 	}
