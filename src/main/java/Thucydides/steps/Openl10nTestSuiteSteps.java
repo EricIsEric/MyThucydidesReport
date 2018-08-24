@@ -76,9 +76,10 @@ public class Openl10nTestSuiteSteps {
 	public void RunRisk1Exe() throws Exception {
 		logger.info("Into:  RunRisk1Exe()----------------------------");
 		Thread.sleep(5000);
-		File file = new File("src/test/resources/autoItScript/Risk01_EmptyZipFile/PPM_950_fi.exe");
+//		File file = new File("src/test/resources/autoItScript/Risk01_EmptyZipFile/PPM_950_fi.exe");
+		File file = new File("C:\\1\\Empty\\PPM950fi.exe");
 //		browserObjectAndCommonMethodPage.executeCmd("powershell.exe Start-Process PPM_9.50_fi_EmptyZip.exe -verb RunAs");
-		browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath().replace('\\', '/'));
+		browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath());
 //		java.awt.Desktop.getDesktop().open(file);  //这里或许可以不用open file
 		/*logger.info("=-=-=-=-=-=-Starting Runtime=-=-=-=-=-=-");
 		Thread.sleep(10000);
