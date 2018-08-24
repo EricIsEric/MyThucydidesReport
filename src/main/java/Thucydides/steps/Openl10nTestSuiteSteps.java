@@ -79,7 +79,7 @@ public class Openl10nTestSuiteSteps {
 //		File file = new File("src/test/resources/autoItScript/Risk01_EmptyZipFile/PPM_950_fi.exe");
 		File file = new File("C:\\1\\Empty\\PPM950fi.exe");
 //		browserObjectAndCommonMethodPage.executeCmd("powershell.exe Start-Process PPM_9.50_fi_EmptyZip.exe -verb RunAs");
-		browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath());
+		browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath().replace('\\', '/'));
 //		java.awt.Desktop.getDesktop().open(file);  //这里或许可以不用open file
 		/*logger.info("=-=-=-=-=-=-Starting Runtime=-=-=-=-=-=-");
 		Thread.sleep(10000);
