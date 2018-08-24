@@ -71,16 +71,15 @@ public class Openl10nTestSuiteSteps {
 		Thread.sleep(2000);
 	}
 	
-	@SuppressWarnings("static-access")
 	@Step
 	public void RunRisk1Exe() throws Exception {
 		logger.info("Into:  RunRisk1Exe()----------------------------");
 		Thread.sleep(5000);
 		File file = new File("src/test/resources/autoItScript/Risk01_EmptyZipFile/PPM_9.50_fi.exe");
-		browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath());
-		java.awt.Desktop.getDesktop().open(file);  //这里或许可以不用open file
+		/*browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath());
+		java.awt.Desktop.getDesktop().open(file);  //这里或许可以不用open file*/
 		logger.info("=-=-=-=-=-=-Starting Runtime=-=-=-=-=-=-");
-		/*Thread.sleep(10000);
+		Thread.sleep(10000);
 		Runtime run = Runtime.getRuntime();
 		if(run!=null) {
 			System.out.println("Get Run Successfully!");
@@ -89,7 +88,7 @@ public class Openl10nTestSuiteSteps {
 		}
 		Thread.sleep(10000);
 		logger.info("=-=-=-=-=-=-Ending Runtime=-=-=-=-=-=-");
-		run.exec(file.getAbsolutePath().replace('\\', '/'));*/
+		run.exec(file.getAbsolutePath().replace('\\', '/'));
 		Thread.sleep(5000);
 		logger.info("Exit:  RunRisk1Exe()----------------------------"+file.getAbsolutePath().replace('\\', '/'));
 	}
