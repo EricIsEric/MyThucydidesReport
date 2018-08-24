@@ -77,8 +77,8 @@ public class Openl10nTestSuiteSteps {
 		logger.info("Into:  RunRisk1Exe()----------------------------");
 		Thread.sleep(5000);
 		File file = new File("src/test/resources/autoItScript/Risk01_EmptyZipFile/PPM_9.50_fi.exe");
-		browserObjectAndCommonMethodPage.executeCmd("powershell.exe Start-Process PPM_9.50_fi_EmptyZip.exe -verb RunAs");
-//		browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath().replace('\\', '/'));
+//		browserObjectAndCommonMethodPage.executeCmd("powershell.exe Start-Process PPM_9.50_fi_EmptyZip.exe -verb RunAs");
+		browserObjectAndCommonMethodPage.executeCmd(file.getAbsolutePath().replace('\\', '/'));
 //		java.awt.Desktop.getDesktop().open(file);  //这里或许可以不用open file
 		/*logger.info("=-=-=-=-=-=-Starting Runtime=-=-=-=-=-=-");
 		Thread.sleep(10000);
@@ -91,6 +91,8 @@ public class Openl10nTestSuiteSteps {
 		Thread.sleep(10000);
 		logger.info("=-=-=-=-=-=-Ending Runtime=-=-=-=-=-=-");
 		run.exec(file.getAbsolutePath());*/
+		Thread.sleep(5000);
+		browserObjectAndCommonMethodPage.CloseOpenTest();
 		Thread.sleep(5000);
 		logger.info("Exit:  RunRisk1Exe()----------------------------"+file.getAbsolutePath().replace('\\', '/'));
 	}
