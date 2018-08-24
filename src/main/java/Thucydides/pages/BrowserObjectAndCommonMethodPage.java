@@ -163,7 +163,7 @@ public class BrowserObjectAndCommonMethodPage extends PageObject {
 		logger.info("Into executeCmd()");
 		Runtime runtime = Runtime.getRuntime();
 		Process process = runtime.exec("cmd /c " + command);
-		logger.info("exec: " + "cmd /c " + command);
+		logger.info("exec: " + "cmd /start " + command);
 		BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream(), "UTF-8"));
 		String line = null;
 		StringBuilder build = new StringBuilder();
