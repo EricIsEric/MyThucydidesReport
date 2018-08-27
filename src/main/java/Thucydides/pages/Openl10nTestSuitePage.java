@@ -41,35 +41,5 @@ public class Openl10nTestSuitePage extends PageObject {
 		
 		browserObjectAndCommonMethodPage.FinalDown("/html/body/app-root/div/app-applications/div/div/mf-translation/div/div/div[2]/div/button[1]");
 	}
-	
-	public void ClickLogoutBtn() throws Exception {
-		browserObjectAndCommonMethodPage.ClickLogoutBtn();
-	}
-	
-	public void LoginBtnAftOut() throws Exception {
-		browserObjectAndCommonMethodPage.LoginBtnAftOut();
-	}
-	
-	
-	public void SelectPvl() throws Exception {
-		browserObjectAndCommonMethodPage.SelectPvl();
-	}
-	
-	
-	public void UploadBtn(){
-		find(By.xpath("/html/body/app-root/div/app-applications/div/div/mf-translation/div/div/div[2]/div/button[2]")).click();
-	}
-	
-	public void Risk1ResultAssert() {
-		browserObjectAndCommonMethodPage.EmptyAssert();
-	}
-
-	public void Risk2ResultAssert() throws Exception {
-		browserObjectAndCommonMethodPage.Risk2ResultAssert();
-	}
-
-	public void TakeAlertShot() throws Exception {
-		browserObjectAndCommonMethodPage.TakeAlertShot();
-	}
 
 }
