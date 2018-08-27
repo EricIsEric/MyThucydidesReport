@@ -32,8 +32,8 @@ public class Openl10nTestSuiteSteps {
 	
 	@Step
 	public void StartDownCsv() throws Exception{
-//		openl10nTestSuitePage.DownCsvFile(System.getProperty("JenkinsProduct"),System.getProperty("JenkinsVersion"), System.getProperty("JenkinsLanguage"));
-		openl10nTestSuitePage.DownCsvFile("PPM","9.50","Finnish");
+		openl10nTestSuitePage.DownCsvFile(System.getProperty("JenkinsProduct"),System.getProperty("JenkinsVersion"), System.getProperty("JenkinsLanguage"));
+//		openl10nTestSuitePage.DownCsvFile("PPM","9.50","Finnish");
 	}
 	
 	@Step
